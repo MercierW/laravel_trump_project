@@ -2,8 +2,9 @@
 
     <body class="antialiased">
         <header>
+                @include('partials.nav')
                 <h1>
-                    Projet Trump Donald
+                    {{ $title }}
                 </h1>
         </header>
         <main>

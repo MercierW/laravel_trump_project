@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ControllerAccueil;
+use App\Http\Controllers\ControllerPresentation;
+use App\Http\Controllers\ControllerAbout;
+use App\Http\Controllers\ControllerLang;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ControllerAccueil::class, 'accueil']);
+
+Route::get('/presentation', [ControllerPresentation::class, 'presentation']);
+
+Route::get('/about', [ControllerAbout::class, 'about']);
+
+Route::get('/lang', [ControllerLang::class, 'lang']);
+
+/* // Route::get('/presentation', function () {
+//     return view('presentation', [
+//         'title' => 'Paul l\'alien',
+//         'date' => new DateTime(),
+//     ]);
+// });
+ */
