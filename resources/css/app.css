@@ -1,3 +1,32 @@
+/* reset */
+@import url(./reset.css);
+
+/* theme */
+
+header{
+    h1{
+        color: antiquewhite;
+    }
+}
+
+footer{
+    p{
+        color: antiquewhite;
+    }
+}
+
 body{
-    color: red;
+    background-color: blueviolet;
+}
+
+img{
+    height: 50rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    div{
+        padding: 5rem;
+    }
 }
