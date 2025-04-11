@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* A RETENIR*/
+    min-height: 100svh;
+    font: 1.6rem "Montserrat";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100svh;
+    margin: 0;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,ol,ul,
+figure,blockquote{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-default-link);
+}
+
+button, input{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: inherit;
+}
+
+img{
+    display: inline-block;
+    object-fit: cover;
+}
+
+.pictures{
+    max-width: 30rem;
+    margin: 5rem auto;
+}
+
+.pictures img{
+    width: 100%;
+    clip-path: circle(50%);
+}
+
+header{
+    h1{
+        text-align: center;
+        line-height: 8rem;
+        font-size: 6rem;
+        padding: 2rem 0;
+    }
+}
+
+article{
+    max-width: 70rem;
+    margin: 0 auto;
+    p{
+        background-color: var(--main-color);
+        padding: 1rem;
+        text-align: justify;
+        border-radius: 2rem;
+    }
+}
+
+footer *{
+    text-align: center;
+}
